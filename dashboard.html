@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Xinney</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <nav id="sidebar" class="active">
+            <div class="sidebar-header">
+                <img src="img/logo.png" alt="Xinney logo" class="app-logo">
+            </div>
+            <ul class="list-unstyled components text-secondary">
+                <li>
+                    <a href="dashboard.html" class="active"><i class="fas fa-home"></i> Dashboard</a>
+                </li>
+                
+                <li>
+                    <a href="#menu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-layer-group"></i> Orders</a>
+                    <ul class="collapse list-unstyled" id="menu1">
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> All</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> Ordered</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> Delivered</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> Cancelled</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#menu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-cart-plus"></i> Brand and Category</a>
+                    <ul class="collapse list-unstyled" id="menu2">
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> Add Brand</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> List Brand</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> Add Category</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> List Category</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#menu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-cubes"></i> Product</a>
+                    <ul class="collapse list-unstyled" id="menu3">
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> List Inventory</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> Add Inventory</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> Preorder Purchase</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#menu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-credit-card"></i> Purchase</a>
+                    <ul class="collapse list-unstyled" id="menu4">
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> Add Purchase</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> List Purchase</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#menu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-users"></i> Users</a>
+                    <ul class="collapse list-unstyled" id="menu5">
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> All</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> Create User</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fas fa-wrench"></i> Order Form</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-file"></i> Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="body" class="active">
+            <nav class="navbar navbar-expand-lg navbar-white bg-white">
+                <button type="button" id="sidebarCollapse" class="btn btn-light"><i class="fas fa-bars"></i><span></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <div class="nav-dropdown">
+                                <a href="#" class="nav-item nav-link dropdown-toggle text-secondary" data-toggle="dropdown"><i class="fas fa-link"></i> <span>Quick Access</span> <i style="font-size:.8em;" class="fas fa-caret-down"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right nav-link-menu">
+                                    <ul class="nav-list">
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-list"></i> Access Logs</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-database"></i> Back Ups</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-cloud-download-alt"></i> Updates</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-user-shield"></i> Roles</a></li>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="nav-dropdown">
+                                <a href="#" class="nav-item nav-link dropdown-toggle text-secondary" data-toggle="dropdown"><i class="fas fa-user"></i> <span>Amit Dhital</span> <i style="font-size:.8em;" class="fas fa-caret-down"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right nav-link-menu">
+                                    <ul class="nav-list">
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-envelope"></i> Messages</a></li>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-cog"></i> Settings</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-user-shield"></i> Logout</a></li>
+                                        <!-- <div class="dropdown-divider"></div> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <!-- content -->
+            <nav class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 page-header">
+                            <div class="page-pretitle">Overview</div>
+                            <h2 class="page-title">Dashboard</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="icon-big text-center">
+                                                <i class="teal fas fa-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="detail">
+                                                <p class="detail-subtitle">Delivered Order</p>
+                                                <span class="number">6,267</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <hr />
+                                        <div class="stats">
+                                            <button class="btn btn-outline-success">Check Delivered Orders</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="icon-big text-center">
+                                                <i class="olive fas fa-money-bill-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="detail">
+                                                <p class="detail-subtitle">Cancelled Order</p>
+                                                <span class="number">80,900</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <hr />
+                                        <div class="stats">
+                                            <button class="btn btn-outline-danger">Check Cancelled Orders</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="icon-big text-center">
+                                                <i class="violet fas fa-eye"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="detail">
+                                                <p class="detail-subtitle">Pending Order</p>
+                                                <span class="number">28,210</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <hr />
+                                        <div class="stats">
+                                            <button class="btn btn-outline-warning">Check Pending Orders</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <footer class="footer text-center mt-5">
+                <p>Copyright 2021 Xinney Nepal. All Rights Reserved</p>
+            </footer>
+        </div>
+
+    </div>
+
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
