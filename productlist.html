@@ -26,7 +26,7 @@
             </div>
             <ul class="list-unstyled components text-secondary" id="myaccordian">
                 <li>
-                    <a href="./dashboard.html" class="active nav__link"><i class="fas fa-home"></i> Dashboard</a>
+                    <a href="./dashboard.html" class="nav__link"><i class="fas fa-home"></i> Dashboard</a>
                 </li>
 
                 <li>
@@ -66,7 +66,7 @@
                 </li>
 
                 <li>
-                    <a href="#menu3" data-toggle="collapse" aria-expanded="false" class="nav__link dropdown-toggle no-caret-down"><i class="fas fa-cubes"></i> Product</a>
+                    <a href="#menu3" data-toggle="collapse" aria-expanded="false" class="active nav__link dropdown-toggle no-caret-down"><i class="fas fa-cubes"></i> Product</a>
                     <ul class="collapse list-unstyled" id="menu3" data-parent="#myaccordian">
                         <li>
                             <a href="./productlist.html"><i class="fas fa-angle-right"></i> List Inventory</a>
@@ -112,7 +112,6 @@
                 </li>
             </ul>
         </nav>
-
         <div id="body" class="active">
             <nav class="navbar navbar-expand-lg navbar-white bg-white">
                 <button type="button" id="sidebarCollapse" class="btn btn-light"><i class="fas fa-bars"></i><span></span></button>
@@ -156,96 +155,92 @@
                 </div>
                 <!-- =================== End of Modal ======================== -->
             <!-- content -->
-            <nav class="content">
+            <div class="content">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 page-header">
-                            <div class="page-pretitle">Overview</div>
-                            <h2 class="page-title">Dashboard</h2>
-                        </div>
+                    <div class="page-title">
+                        <h3>Product</h3>
                     </div>
-
                     <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
+                        <div class="col-md-12 col-lg-12">
                             <div class="card">
-                                <div class="content">
+                                <div class="card-header h5">List Product</div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th>S.No</th>
+                                                    <th>Name</th>
+                                                    <th>Count</th>
+                                                    <th>Brand</th>
+                                                    <th>Selling Price</th>
+                                                    <th>Product Type</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Kylie Skin Care</td>
+                                                    <td>10</td>
+                                                    <td>Kylie Jenner</td>
+                                                    <td>1500</td>
+                                                    <td>Inventory</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Eyeliners</td>
+                                                    <td>5</td>
+                                                    <td>Morphee</td>
+                                                    <td>1000</td>
+                                                    <td>Inventory</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Lipstick</td>
+                                                    <td>10</td>
+                                                    <td>Sephora</td>
+                                                    <td>1900</td>
+                                                    <td>Preorder</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>Mascara</td>
+                                                    <td>8</td>
+                                                    <td>Beauty Nepal</td>
+                                                    <td>Inventory</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                     <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="icon-big text-center">
-                                                <i class="teal fas fa-shopping-cart"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <div class="detail">
-                                                <p class="detail-subtitle">Delivered Order</p>
-                                                <span class="number">6,267</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="footer">
-                                        <hr />
-                                        <div class="stats">
-                                            <button class="btn btn-outline-success">Check Delivered Orders</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="icon-big text-center">
-                                                <i class="olive fas fa-money-bill-alt"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <div class="detail">
-                                                <p class="detail-subtitle">Cancelled Order</p>
-                                                <span class="number">80,900</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="footer">
-                                        <hr />
-                                        <div class="stats">
-                                            <button class="btn btn-outline-danger">Check Cancelled Orders</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="icon-big text-center">
-                                                <i class="violet fas fa-eye"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <div class="detail">
-                                                <p class="detail-subtitle">Pending Order</p>
-                                                <span class="number">28,210</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="footer">
-                                        <hr />
-                                        <div class="stats">
-                                            <button class="btn btn-outline-warning">Check Pending Orders</button>
+                                        <div class="col-sm-12 col-md-5"></div>
+                                        <div class="col-sm-12 col-md-7">
+                                            <ul class="pagination">
+                                                <li class="pahginate_button page-item previous disabled">
+                                                    <a href="#" class="page-link" aria-controls="datatables-example">Previous</a>
+                                                </li>
+                                                <li class="pahginate_button page-item">
+                                                    <a href="#" class="page-link" aria-controls="datatables-example">1</a>
+                                                </li>
+                                                <li class="pahginate_button page-item active">
+                                                    <a href="#" class="page-link" aria-controls="datatables-example">2</a>
+                                                </li>
+                                                <li class="pahginate_button page-item">
+                                                    <a href="#" class="page-link" aria-controls="datatables-example">3</a>
+                                                </li>
+                                                <li class="pahginate_button page-item next disabled">
+                                                    <a href="#" class="page-link" aria-controls="datatables-example">Next</a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-            </nav>
+            </div>
 
             <footer class="footer text-center mt-5">
                 <p>Copyright 2021 Xinney Nepal. All Rights Reserved</p>

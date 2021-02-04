@@ -26,7 +26,7 @@
             </div>
             <ul class="list-unstyled components text-secondary" id="myaccordian">
                 <li>
-                    <a href="./dashboard.html" class="active nav__link"><i class="fas fa-home"></i> Dashboard</a>
+                    <a href="./dashboard.html" class="nav__link"><i class="fas fa-home"></i> Dashboard</a>
                 </li>
 
                 <li>
@@ -93,7 +93,7 @@
                 </li>
 
                 <li>
-                    <a href="#menu5" data-toggle="collapse" aria-expanded="false" class="nav__link dropdown-toggle no-caret-down"><i class="fas fa-users"></i> Users</a>
+                    <a href="#menu5" data-toggle="collapse" aria-expanded="false" class="active nav__link dropdown-toggle no-caret-down"><i class="fas fa-users"></i> Users</a>
                     <ul class="collapse list-unstyled" id="menu5" data-parent="#myaccordian">
                         <li>
                             <a href="./userlist.html"><i class="fas fa-angle-right"></i> All</a>
@@ -156,96 +156,116 @@
                 </div>
                 <!-- =================== End of Modal ======================== -->
             <!-- content -->
-            <nav class="content">
+            <div class="content">
                 <div class="container">
+                    <div class="page-title">
+                        <h3>User</h3>
+                    </div>
                     <div class="row">
-                        <div class="col-md-12 page-header">
-                            <div class="page-pretitle">Overview</div>
-                            <h2 class="page-title">Dashboard</h2>
+                        <div class="col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-header h5">List User</div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Username</th>
+                                                    <th>Email</th>
+                                                    <th>Usertype</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>bksvaila</td>
+                                                    <td>bhailabikesh1@gmail.com</td>
+                                                    <td>Admin</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-outline-primary">Edit</a>
+                                                        <span></span>
+                                                        <a href="#" class="btn btn-outline-danger">Delete</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>amitdhital</td>
+                                                    <td>amitdhital@gmail.com</td>
+                                                    <td>Super Admin</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-outline-primary">Edit</a>
+                                                        <span></span>
+                                                        <a href="#" class="btn btn-outline-danger">Delete</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>sanish</td>
+                                                    <td>sanish@gmail.com</td>
+                                                    <td>User</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-outline-primary">Edit</a>
+                                                        <span></span>
+                                                        <a href="#" class="btn btn-outline-danger">Delete</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>manish</td>
+                                                    <td>manish209@gmail.com</td>
+                                                    <td>User</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-outline-primary">Edit</a>
+                                                        <span></span>
+                                                        <a href="#" class="btn btn-outline-danger">Delete</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5</th>
+                                                    <td>Rikesh</td>
+                                                    <td>rikki1990@gmail.com</td>
+                                                    <td>Admin</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-outline-primary">Edit</a>
+                                                        <span></span>
+                                                        <a href="#" class="btn btn-outline-danger">Delete</a>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-5"></div>
+                                        <div class="col-sm-12 col-md-7">
+                                            <ul class="pagination">
+                                                <li class="pahginate_button page-item previous disabled">
+                                                    <a href="#" class="page-link" aria-controls="datatables-example">Previous</a>
+                                                </li>
+                                                <li class="pahginate_button page-item">
+                                                    <a href="#" class="page-link" aria-controls="datatables-example">1</a>
+                                                </li>
+                                                <li class="pahginate_button page-item active">
+                                                    <a href="#" class="page-link" aria-controls="datatables-example">2</a>
+                                                </li>
+                                                <li class="pahginate_button page-item">
+                                                    <a href="#" class="page-link" aria-controls="datatables-example">3</a>
+                                                </li>
+                                                <li class="pahginate_button page-item next disabled">
+                                                    <a href="#" class="page-link" aria-controls="datatables-example">Next</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="icon-big text-center">
-                                                <i class="teal fas fa-shopping-cart"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <div class="detail">
-                                                <p class="detail-subtitle">Delivered Order</p>
-                                                <span class="number">6,267</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="footer">
-                                        <hr />
-                                        <div class="stats">
-                                            <button class="btn btn-outline-success">Check Delivered Orders</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="icon-big text-center">
-                                                <i class="olive fas fa-money-bill-alt"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <div class="detail">
-                                                <p class="detail-subtitle">Cancelled Order</p>
-                                                <span class="number">80,900</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="footer">
-                                        <hr />
-                                        <div class="stats">
-                                            <button class="btn btn-outline-danger">Check Cancelled Orders</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="icon-big text-center">
-                                                <i class="violet fas fa-eye"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <div class="detail">
-                                                <p class="detail-subtitle">Pending Order</p>
-                                                <span class="number">28,210</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="footer">
-                                        <hr />
-                                        <div class="stats">
-                                            <button class="btn btn-outline-warning">Check Pending Orders</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
-            </nav>
+            </div>
 
             <footer class="footer text-center mt-5">
                 <p>Copyright 2021 Xinney Nepal. All Rights Reserved</p>

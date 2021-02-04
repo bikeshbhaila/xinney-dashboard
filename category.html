@@ -26,7 +26,7 @@
             </div>
             <ul class="list-unstyled components text-secondary" id="myaccordian">
                 <li>
-                    <a href="./dashboard.html" class="active nav__link"><i class="fas fa-home"></i> Dashboard</a>
+                    <a href="./dashboard.html" class="nav__link"><i class="fas fa-home"></i> Dashboard</a>
                 </li>
 
                 <li>
@@ -48,7 +48,7 @@
                 </li>
 
                 <li>
-                    <a href="#menu2" data-toggle="collapse" aria-expanded="false" class="nav__link dropdown-toggle no-caret-down"><i class="fas fa-cart-plus"></i> Brand and Category</a>
+                    <a href="#menu2" data-toggle="collapse" aria-expanded="false" class="active nav__link dropdown-toggle no-caret-down"><i class="fas fa-cart-plus"></i> Brand and Category</a>
                     <ul class="collapse list-unstyled" id="menu2" data-parent="#myaccordian">
                         <li>
                             <a href="./brand.html"><i class="fas fa-angle-right"></i> Add Brand</a>
@@ -136,116 +136,105 @@
                 </div>
             </nav>
             
-                <!-- =================== Modal ======================== -->
-                <div class="modal fade" id="sign-out">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Want to leave?</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                Are you sure you want to log out?
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-success" data-dismiss="modal">Stay Here</button>
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Leave</button>
-                            </div>
+            <!-- =================== Modal ======================== -->
+            <div class="modal fade" id="sign-out">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Want to leave?</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure you want to log out?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Stay Here</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Leave</button>
                         </div>
                     </div>
                 </div>
-                <!-- =================== End of Modal ======================== -->
+            </div>
+            <!-- =================== End of Modal ======================== -->
             <!-- content -->
-            <nav class="content">
+            <div class="content">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 page-header">
-                            <div class="page-pretitle">Overview</div>
-                            <h2 class="page-title">Dashboard</h2>
-                        </div>
+                    <div class="page-title">
+                        <h3>Category</h3>
                     </div>
-
                     <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
+                        <div class="col-lg-12">
                             <div class="card">
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="icon-big text-center">
-                                                <i class="teal fas fa-shopping-cart"></i>
+                                <div class="card-header h5">Add Category</div>
+                                <div class="card-body">
+                                    <form class="">
+                                        <div class="form-group row">
+                                            <label for="categoryName" class="col-sm-2 font-weight-bold">Category Name</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" name="categoryName" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="col-sm-8">
-                                            <div class="detail">
-                                                <p class="detail-subtitle">Delivered Order</p>
-                                                <span class="number">6,267</span>
+                                        <div class="form-group row">
+                                            <label for="slug" class="col-sm-2 font-weight-bold">Slug</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" name="slug" class="form-control">
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="footer">
-                                        <hr />
-                                        <div class="stats">
-                                            <button class="btn btn-outline-success">Check Delivered Orders</button>
+                                        <div class="form-group row">
+                                            <label for="shortDescription" class="col-sm-2 font-weight-bold">Short Description</label>
+                                            <div class="col-sm-6">
+                                                <textarea name="shortDescription" id="" cols="30" rows="3" class="form-control"></textarea>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                        <div class="form-group row">
+                                            <label for="longDescription" class="col-sm-2 font-weight-bold">Description</label>
+                                            <div class="col-sm-6">
+                                                <textarea name="longDescription" id="" cols="30" rows="3" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="country" class="col-sm-2 font-weight-bold">Category</label>
+                                            <div class="col-sm-6">
+                                                <div class="i-checks">
+                                                    <input id="checkboxCustom1" type="checkbox" value="">
+                                                    <label for="checkboxCustom1">Ordinary</label>
+                                                    <ul>
+                                                        <li class="list-unstyled">
+                                                            <div class="i-checks">
+                                                                <input id="checkboxCustom2" type="checkbox" value="">
+                                                                <label for="checkboxCustom2">CC</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-unstyled">
+                                                            <div class="i-checks">
+                                                                <input id="checkboxCustom3" type="checkbox" value="">
+                                                                <label for="checkboxCustom3">ZEN</label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="file" class="col-sm-2 font-weight-bold">Image</label>
+                                            <div class="col-sm-6">
+                                                <input type="file" class="form-control-file">
+                                            </div>
+                                        </div>
 
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="icon-big text-center">
-                                                <i class="olive fas fa-money-bill-alt"></i>
+                                        <div class="line"></div><br>
+                                        <div class="form-group row">
+                                            <div class="col-sm-4 offset-sm-2">
+                                                <button type="submit" class="btn btn-secondary mb-2"><i class="fas fa-times"></i> Cancel</button>
+                                                <button type="submit" class="btn btn-primary mb-2"><i class="fas fa-save"></i> Add Category</button>
                                             </div>
                                         </div>
-                                        <div class="col-sm-8">
-                                            <div class="detail">
-                                                <p class="detail-subtitle">Cancelled Order</p>
-                                                <span class="number">80,900</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="footer">
-                                        <hr />
-                                        <div class="stats">
-                                            <button class="btn btn-outline-danger">Check Cancelled Orders</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-6 col-lg-4 mt-3">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="icon-big text-center">
-                                                <i class="violet fas fa-eye"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <div class="detail">
-                                                <p class="detail-subtitle">Pending Order</p>
-                                                <span class="number">28,210</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="footer">
-                                        <hr />
-                                        <div class="stats">
-                                            <button class="btn btn-outline-warning">Check Pending Orders</button>
-                                        </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </nav>
+            </div>
 
             <footer class="footer text-center mt-5">
                 <p>Copyright 2021 Xinney Nepal. All Rights Reserved</p>

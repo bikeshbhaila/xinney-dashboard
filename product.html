@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Xinney</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <nav id="sidebar" class="active">
+            <div class="sidebar-header">
+                <a href="./dashboard.html">
+                    <img src="img/logo.png" alt="Xinney logo" class="app-logo">
+                </a>
+            </div>
+            <ul class="list-unstyled components text-secondary" id="myaccordian">
+                <li>
+                    <a href="./dashboard.html" class="nav__link"><i class="fas fa-home"></i> Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="#menu1" data-toggle="collapse" aria-expanded="false" class="nav__link dropdown-toggle no-caret-down"><i class="fas fa-layer-group"></i> Orders</a>
+                    <ul class="collapse list-unstyled" id="menu1" data-parent="#myaccordian">
+                        <li>
+                            <a href="./orders.html"><i class="fas fa-angle-right"></i> All</a>
+                        </li>
+                        <li>
+                            <a href="./orders.html"><i class="fas fa-angle-right"></i> Ordered</a>
+                        </li>
+                        <li>
+                            <a href="./orders.html"><i class="fas fa-angle-right"></i> Delivered</a>
+                        </li>
+                        <li>
+                            <a href="./orders.html"><i class="fas fa-angle-right"></i> Cancelled</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#menu2" data-toggle="collapse" aria-expanded="false" class="nav__link dropdown-toggle no-caret-down"><i class="fas fa-cart-plus"></i> Brand and Category</a>
+                    <ul class="collapse list-unstyled" id="menu2" data-parent="#myaccordian">
+                        <li>
+                            <a href="./brand.html"><i class="fas fa-angle-right"></i> Add Brand</a>
+                        </li>
+                        <li>
+                            <a href="./brandlist.html"><i class="fas fa-angle-right"></i> List Brand</a>
+                        </li>
+                        <li>
+                            <a href="./category.html"><i class="fas fa-angle-right"></i> Add Category</a>
+                        </li>
+                        <li>
+                            <a href="./categorylist.html"><i class="fas fa-angle-right"></i> List Category</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#menu3" data-toggle="collapse" aria-expanded="false" class="active nav__link dropdown-toggle no-caret-down"><i class="fas fa-cubes"></i> Product</a>
+                    <ul class="collapse list-unstyled" id="menu3" data-parent="#myaccordian">
+                        <li>
+                            <a href="./productlist.html"><i class="fas fa-angle-right"></i> List Inventory</a>
+                        </li>
+                        <li>
+                            <a href="./product.html"><i class="fas fa-angle-right"></i> Add Inventory</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-angle-right"></i> Preorder Purchase</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#menu4" data-toggle="collapse" aria-expanded="false" class="nav__link dropdown-toggle no-caret-down"><i class="fas fa-credit-card"></i> Purchase</a>
+                    <ul class="collapse list-unstyled" id="menu4" data-parent="#myaccordian">
+                        <li>
+                            <a href="./purchase.html"><i class="fas fa-angle-right"></i> Add Purchase</a>
+                        </li>
+                        <li>
+                            <a href="./purchaselist.html"><i class="fas fa-angle-right"></i> List Purchase</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#menu5" data-toggle="collapse" aria-expanded="false" class="nav__link dropdown-toggle no-caret-down"><i class="fas fa-users"></i> Users</a>
+                    <ul class="collapse list-unstyled" id="menu5" data-parent="#myaccordian">
+                        <li>
+                            <a href="./userlist.html"><i class="fas fa-angle-right"></i> All</a>
+                        </li>
+                        <li>
+                            <a href="./user.html"><i class="fas fa-angle-right"></i> Create User</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="./order.html" class="nav__link"><i class="fas fa-wrench"></i> Order Form</a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="nav__link"><i class="fas fa-file"></i> Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="body" class="active">
+            <nav class="navbar navbar-expand-lg navbar-white bg-white">
+                <button type="button" id="sidebarCollapse" class="btn btn-light"><i class="fas fa-bars"></i><span></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <div class="nav-dropdown">
+                                <a href="#" class="nav-item nav-link dropdown-toggle text-secondary" data-toggle="dropdown"><img src="img/admin.JPG" alt="admin" class="img-thumbnail" style="width: 25px; height: 25px;"><span> Amit Dhital</span> <i style="font-size:.8em;" class="fas fa-caret-down"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right nav-link-menu">
+                                    <ul class="nav-list">
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-envelope"></i> Messages</a></li>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-cog"></i> Settings</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="" class="dropdown-item" data-toggle="modal" data-target="#sign-out"><i class="fas fa-user-shield"></i> Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <!-- =================== Modal ======================== -->
+            <div class="modal fade" id="sign-out">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Want to leave?</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure you want to log out?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Stay Here</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Leave</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =================== End of Modal ======================== -->
+            <!-- content -->
+            <div class="content">
+                <div class="container">
+                    <div class="page-title">
+                        <h3>Product</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header h5">Add Product</div>
+                                <div class="card-body">
+                                    <form class="">
+                                        <div class="form-group row">
+                                            <label for="sku" class="col-sm-2 font-weight-bold">SKU</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" name="sku" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="name" class="col-sm-2 font-weight-bold">Name</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" name="name" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="longDescription" class="col-sm-2 font-weight-bold">Description</label>
+                                            <div class="col-sm-6">
+                                                <textarea name="longDescription" id="" cols="30" rows="3" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="productType" class="col-sm-2 font-weight-bold">Product Type</label>
+                                            <div class="col-sm-4 select">
+                                                <select name="productType" id="" class="form-control" required>
+                                                    <option value="" selected>Choose...</option>
+                                                    <option value="1">Inventory</option>
+                                                    <option value="2">Preorder</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="country" class="col-sm-2 font-weight-bold">Category</label>
+                                            <div class="col-sm-6">
+                                                <div class="i-checks">
+                                                    <input id="checkboxCustom1" type="checkbox" value="">
+                                                    <label for="checkboxCustom1">Ordinary</label>
+                                                    <ul>
+                                                        <li class="list-unstyled">
+                                                            <div class="i-checks">
+                                                                <input id="checkboxCustom2" type="checkbox" value="">
+                                                                <label for="checkboxCustom2">CC</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-unstyled">
+                                                            <div class="i-checks">
+                                                                <input id="checkboxCustom3" type="checkbox" value="">
+                                                                <label for="checkboxCustom3">ZEN</label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="brandType" class="col-sm-2 font-weight-bold">Location (Default Ordered)</label>
+                                            <div class="col-sm-4 select">
+                                                <select name="brandType" id="" class="form-control" required>
+                                                    <option value="" selected>Choose...</option>
+                                                    <option value="1">Ordered</option>
+                                                    <option value="2">Delivered in US</option>
+                                                    <option value="3">Delivered in Nepal</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="name" class="col-sm-2 font-weight-bold">Count (Default 0)</label>
+                                            <div class="col-sm-4">
+                                                <input type="number" name="name" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="file" class="col-sm-2 font-weight-bold">Image</label>
+                                            <div class="col-sm-4">
+                                                <input type="file" class="form-control-file">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" placeholder="caption eg xinney hair oil">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="weightType" class="col-sm-2 font-weight-bold">Weight Type</label>
+                                            <div class="col-sm-4 select">
+                                                <select name="weightType" id="" class="form-control" required>
+                                                    <option value="" selected>Choose...</option>
+                                                    <option value="1">Lb/oz</option>
+                                                    <option value="2">Kg/gm</option>
+                                                    <option value="3">Litre/ml</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="mainWeight" class="col-sm-2 font-weight-bold">Main Weight</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" name="mainWeight" class="form-control">
+                                            </div>
+
+                                            <label for="subWeight" class="col-sm-2 font-weight-bold">Sub Weight</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" name="subWeight" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="price" class="col-sm-2 font-weight-bold">Price</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" name="price" class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="line"></div><br>
+                                        <div class="form-group row">
+                                            <div class="col-sm-4 offset-sm-2">
+                                                <button type="submit" class="btn btn-secondary mb-2"><i class="fas fa-times"></i> Cancel</button>
+                                                <button type="submit" class="btn btn-primary mb-2"><i class="fas fa-save"></i> Add Product</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer text-center mt-5">
+                <p>Copyright 2021 Xinney Nepal. All Rights Reserved</p>
+            </footer>
+        </div>
+
+    </div>
+
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
