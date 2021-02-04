@@ -264,3 +264,13 @@ ul.pagination {
 .line {
     border-bottom: 1px solid #E0E0E0;
 }
+/* datatables */
+.datatable_filter {
+    text-align: right;
+}
+
+.datatable_filter input {
+    margin-left: 0.5rem;
+    display: inline-block;
+    width: auto;
+}
